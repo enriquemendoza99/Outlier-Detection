@@ -25,6 +25,8 @@ a 5,000-sample subset to identify the top 4 outliers by nearest-neighbor distanc
 | Pruning 2 only | **12.1s** | **4.5x** |
 | Both | 13.1s | 4.2x |
 
+![Performance Comparison](plots/performance_comparison.png)
+
 ### Top 4 Outliers Identified
 | Rank | Point Index | NN Distance |
 |---|---|---|
@@ -35,6 +37,9 @@ a 5,000-sample subset to identify the top 4 outliers by nearest-neighbor distanc
 
 All four configurations correctly identified the same outliers.
 
+![Outlier Visualization](plots/outlier_visualization.png)
+
 ## Usage
 Pruning 2 is recommended as the most effective strategy — it provided 
 a 4.5x speedup over the brute-force baseline while maintaining correctness.
+
